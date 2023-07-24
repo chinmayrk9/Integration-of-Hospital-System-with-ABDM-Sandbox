@@ -1,0 +1,472 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  background-color: #159895;
+  padding: 16px 32px;
+  border-bottom: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  display: flex;
+  align-items: center;
+}
+
+.navbartitle {
+  flex-grow: 5; 
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  font-weight: bold;
+}
+
+nav a {
+  margin-right: 16px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* .homeHeroImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    width: 100%;
+    height: 90vh;
+    margin-top: 0;
+} */
+
+.homeheading {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.homeblock {
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 15px;
+  background-color: aliceblue;
+  padding-bottom: 190px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.homemenu {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.homeicon {
+  border: 1px solid grey;
+  height: 170px;
+  width: 170px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.homeicon:hover {
+  box-shadow: 5px 5px 7px rgb(0, 0, 0);
+}
+
+.homeicon:hover svg{
+  fill: #E86A33;
+}
+
+.homeicon:hover p{
+  color: #E86A33;
+}
+
+.homeicon p {
+  margin-top: 5;
+  margin-bottom: 5;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.loginblock {
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 15px;
+  background-color: aliceblue;
+  box-shadow: 10px 10px 5px grey;
+  padding-bottom: 50px;
+}
+
+.loginheading {
+  text-align: center;
+  /* padding-top: 50px; */
+}
+
+.loginmenu {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around; 
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-right: 55px;
+}
+
+button {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.registrationBlock {
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 15px;
+  background-color: aliceblue;
+  box-shadow: 10px 10px 5px grey;
+  padding-bottom: 50px;
+}
+
+.registrationHeading {
+  text-align: center;
+}
+
+.registrationAbhaVerificationMenu {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around; 
+  /* align-items: center; */
+  border: 1px solid grey;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding-left: 50px;
+}
+
+.otpVerificationForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abhaVerificationForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registrationNew {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around; 
+  /* align-items: center; */
+  border: 1px solid grey;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-left: 50px;
+}
+
+.patientDetailsForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  align-self: flex-start;
+}
+
+#gender {
+  margin-right: 0;
+}
+
+.patientSearchBlock {
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 15px;
+  background-color: aliceblue;
+  padding-bottom: 50px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.patientSearchHeading {
+  text-align: center;
+  background-color: #159895;
+  border-radius: 15px 15px 0 0;
+}
+
+.patientSearchHeading h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.patientSearchMenu {
+  display: flex; 
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.patientSearchIcon {
+  border: 1px solid grey;
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px grey;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.patientSearchIcon p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.patientSearchIcon:hover {
+  box-shadow: 5px 5px 7px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.patientSearchIcon:hover p {
+  color: #E86A33;
+}
+
+.patientSearchIcon:hover svg {
+  fill: #E86A33;
+}
+
+.patientSearchDiv {
+  width: 25%;
+  margin-left: 10px ;
+  margin-top: 5px;
+}
+
+.topbar {
+  background-color: #D8D8D8;
+  display: flex;
+  padding: 16px 10px;
+  align-items: center;
+}
+
+.topbar h4, svg {
+  margin-left: 10px;
+  margin-right: 5%;
+}
+
+.patientConsultationDiv {
+  width: 70%;
+  box-shadow: 5px 5px 5px grey;
+  border: 2px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.patientConsultationDiv h4 {
+  text-align: center;
+}
+
+.patientConsultationForm {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.pulses, .diagnosis, .bps, .timings, .dosage, .prescription{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 400px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.pulsesHeading, .diagnosisHeading, .bpsHeading, .timingsHeading, .prescriptionHeading, .dosageHeading {
+  padding-top: 16px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  background-color: #159895;
+  border-radius: 15px 15px 0 0;
+} 
+
+.doctorAssignmentHeading h1 {
+  text-align: center;
+}
+
+.doctorAssignmentDiv {
+  width: 70%;
+  box-shadow: 5px 5px 5px grey;
+  border: 2px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.doctorAssignmentForm {
+  width: 50%;
+  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#patientDashboardForm {
+  display: flex;
+}
+
+#patientDashboardForm button {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#patientDashboardForm button:hover {
+  background-color: #45a049;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+#filterTableInput {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#paginationButtonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#paginationButtonDiv button {
+  width: 100px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#paginationButtonDiv button:hover {
+  background-color: #45a049;
+}
+
+#tableSearchDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.checkboxSelectorDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkboxSelectorDiv input {
+  height: 20px;
+  width: 20px;
+}
+
+#sbutton {
+  /*height: 5px;*/
+  /*width: 5px;*/
+  /*margin: 0;*/
+  /*padding: 0*/
+}
